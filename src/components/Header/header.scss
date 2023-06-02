@@ -23,13 +23,13 @@ $desktop-width: 1024px;
 }
 
 @mixin desktop {
-    @media (min-width: ($desktop-width - 1)) and (max-width: 1441px) {
+    @media (min-width: ($desktop-width - 1)) and (max-width: 1478px) {
         @content;
     }
 }
 
 @mixin desktopPro {
-    @media (min-width: 1442px) {
+    @media (min-width: 1479px) {
         @content;
     }
 }
@@ -60,7 +60,7 @@ $desktop-width: 1024px;
         position: absolute;
         width: 1250px;
         height: 840px;
-        right: 80.8%;
+        right: 80%;
         top: -13px;
         background-image: url('../../../public/assets/image/header/back-ground-header.png');
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -346,7 +346,7 @@ $desktop-width: 1024px;
 
     @include desktop {
         &__bg-1 {
-            left: 141px;
+            left: 206px;
         }
     }
 }
