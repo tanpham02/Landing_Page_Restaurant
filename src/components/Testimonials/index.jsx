@@ -37,9 +37,9 @@ function Testimonials() {
                 <div
                     style={{
                         position: 'absolute',
-                        bottom: -50,
+                        bottom: -20,
                         right: '50%',
-                        transform: 'translate(-50%, 0)'
+                        transform: 'translate(-50%, 0)',
                     }}
                 >
                     <span

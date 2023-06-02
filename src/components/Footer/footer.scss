@@ -1,0 +1,100 @@
+.footer {
+    max-width: 100%;
+    width: 100%;
+    height: 950px;
+    background: var(--primary-color);
+
+    &__heading {
+        padding: 140px 0 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .footer__title {
+            font-weight: 500;
+            font-size: 6rem;
+            line-height: 7.6rem;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: var(--white-color);
+            width: 703px;
+            height: 152px;
+        }
+
+        & .footer__btn-appointment {
+            width: 276px;
+            height: 65px;
+            background: var(--white-color);
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            text-align: center;
+            color: #161C28;
+            margin: 62px 0 0;
+        }
+    }
+
+
+    &__logo {
+        width: 119.26px;
+        font-size: 1.8rem;
+        color: var(--white-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &__desc {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        width: 168px;
+        height: 30px;
+        color: var(--white-color);
+        margin-top: 46px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-around;
+
+        & .footer__links {
+
+            & .links-text {
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                color: var(--white-color);
+            }
+
+            & .links-text__body {
+                margin-top: 36px;
+                display: flex;
+                flex-direction: column;
+
+                & .link-content {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: var(--white-color);
+                    width: 116px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+
+    & .copy-right {
+        margin-top: 62px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-feature-settings: 'liga' off;
+        color: var(--white-color);
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,104 @@
+.team {
+    background: linear-gradient(173.96deg, #F6FBFD 15.4%, rgba(244, 248, 253, 0) 91.24%);
+    padding: 100px 0 350px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 7.3rem;
+        text-align: center;
+        color: #343951;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #343951;
+        opacity: 0.8;
+        margin: 30px 0 40px;
+    }
+
+    &__info {
+        width: 362px !important;
+        height: 435px;
+        background: var(--white-color);
+        border: 1px solid #F6FBFD;
+        box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-right: 30px;
+
+        & img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 70px 0 22px;
+        }
+
+        & .info-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+
+            &__name {
+                font-size: 2.6rem;
+                line-height: 3.1rem;
+                text-align: center;
+                color: #343951;
+            }
+
+            &__address {
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 1px;
+                color: #343951;
+                opacity: 0.8;
+                margin-top: 5px;
+            }
+
+            &__phone {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                color: #343951;
+                opacity: 0.9;
+                margin: 51px 0 14px;
+            }
+
+            &__email {
+                font-size: 1.7rem;
+                line-height: 2.1rem;
+                color: var(--primary-color);
+            }
+
+
+            &__icon-star {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                font-size: 18px;
+            }
+
+            &__icon-dot {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                font-size: 18px;
+            }
+
+        }
+    }
+
+
+
+
+
+}

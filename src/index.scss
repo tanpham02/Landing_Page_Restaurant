@@ -17,6 +17,7 @@
   $text-color: #6C768D;
   $second-color: #9747ff;
 
+
   :root {
     --white-color: #{$white-color};
     --primary-color: #{$primary-color};
@@ -93,6 +94,14 @@
 
   .grid-col-5-5 {
     width: 55%;
+  }
+
+  .grid-col-6-4 {
+    width: 60%;
+  }
+
+  .grid-col-4-6 {
+    width: 40%;
   }
 
   .grid-col-2 {
