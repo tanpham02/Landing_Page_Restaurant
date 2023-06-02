@@ -1,0 +1,112 @@
+.our-projects {
+
+    & .btn-prev {
+        margin-right: 22px;
+    }
+
+    & .btn-prev,
+    & .btn-next {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #5F5F5F;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 7.8rem;
+        letter-spacing: 0.5px;
+        color: #2C3847;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 2.6rem;
+        letter-spacing: 0.5px;
+        color: #192239;
+        opacity: 0.8;
+        margin: 30px 0 48px;
+    }
+
+    &__btn {
+        width: 120px;
+        height: 40px;
+        background: #F1F1F1;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #ACACAC;
+        margin-right: 25px;
+
+        &.active {
+            color: var(--white-color);
+            background: var(--primary-color);
+        }
+    }
+
+    &__body {
+        display: flex;
+        overflow-x: hidden;
+        margin-left: 130px;
+    }
+
+    &__content {
+        position: relative;
+        margin: 0 40px 40px 0;
+
+
+        & img {
+            width: 340px !important;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        & .content-body {
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.58) 89.58%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 0 16px 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            &__name {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+
+            &__desc {
+                font-weight: 500;
+                font-size: 1.45rem;
+                line-height: 1.45rem;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+}

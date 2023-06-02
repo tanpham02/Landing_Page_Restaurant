@@ -1,0 +1,91 @@
+.testimonials {
+    position: relative;
+
+    &__title {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 6.4rem;
+        text-align: center;
+        color: #2C3847;
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #9598A0;
+        margin: 24px 0 68px;
+    }
+
+    & .btn-prev,
+    & .btn-next {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #5F5F5F;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__body {
+        width: 864px;
+        height: 450px;
+        background: var(--white-color);
+        box-shadow: 0px 20px 60px rgba(46, 33, 61, 0.08);
+        border-radius: 10px;
+        position: relative;
+        flex-direction: column;
+        padding-top: 50px;
+        margin: 0 22px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 783px;
+            height: 408px;
+            left: 50px;
+            bottom: -50px;
+            background: var(--white-color);
+            box-shadow: 0px 20px 60px rgba(46, 33, 61, 0.05);
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 700px;
+            height: 378px;
+            left: 100px;
+            bottom: -100px;
+            background: var(--white-color);
+            box-shadow: 0px 20px 60px rgba(46, 33, 61, 0.05);
+            border-radius: 10px;
+            z-index: -2;
+        }
+
+
+    }
+
+    &__name {
+        margin: 16px 0 8px;
+    }
+
+    &__introduced {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: #9598A0;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        width: 703px;
+        height: 96px;
+    }
+}

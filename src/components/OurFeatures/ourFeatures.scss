@@ -1,0 +1,121 @@
+.our-features {
+
+
+    & .icon-setting--bg {
+        background-color: #fff0e9;
+    }
+
+    & .icon-setting--color {
+        color: #ff8345;
+    }
+
+    & .icon-mail--bg {
+        background-color: #fff6dd;
+    }
+
+    & .icon-user--bg {
+        background-color: #e9f6ee;
+    }
+
+    & .icon-user--color {
+        color: #48B774;
+    }
+
+    & .icon-phone--bg {
+        background-color: #edffff;
+    }
+
+    & .icon-phone--color {
+        color: #61FFFF;
+    }
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 6.2rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: #2E2E2E;
+        padding-bottom: 30px;
+    }
+
+    &__desc {
+        max-width: 538px;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #5F5F5F;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 90px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & .content__title {
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 3.1rem;
+            text-transform: uppercase;
+            color: #2E2E2E;
+            display: block;
+            padding: 42px 0 25px;
+        }
+
+        & .content__body {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 3rem;
+            text-align: center;
+            color: #5F5F5F;
+            width: 212px;
+        }
+
+        & .content__icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            position: relative;
+
+            & i {
+                font-size: 25px;
+            }
+
+            & i,
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+
+    & .learn-more {
+        display: block;
+        padding: 53px 0 150px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-decoration: underline;
+        color: var(--primary-color);
+        cursor: pointer;
+
+        & i {
+            font-size: 1.4rem;
+            margin-left: 10px;
+        }
+    }
+
+
+}
