@@ -2,5 +2,5 @@
 
 # Tùy vào mỗi loài kích thước của màn hình nên có thể hình ảnh sẽ bị lệch 
 
-![Web on my desktop](/assets/image/header/back-ground-header.png "Optional title")
+![Web on my desktop](public/assets/image/header/back-ground-header.png)
 
