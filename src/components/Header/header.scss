@@ -122,9 +122,9 @@ $desktop-width: 1024px;
             border-radius: 22px;
             position: relative;
 
-            &:hover {
-                border: 2px solid var(--second-color);
-            }
+            // &:hover {
+            //     border: 2px solid var(--second-color);
+            // }
 
             & .header__lang {
                 background: none;
