@@ -1,4 +1,9 @@
-import { useLayoutEffect, useState } from 'react'
+import {
+    useEffect,
+    useLayoutEffect,
+    useState,
+    useRef
+} from 'react'
 import './testimonials.scss'
 const testimonials = [
     {
@@ -14,13 +19,13 @@ const testimonials = [
     {
         img: '/assets/image/testimonials/image-3.png',
         name: 'Sebastian',
-        career: 'Marketing'
+        career: 'Digital Marketing'
     },
 ]
 
 function Testimonials() {
-
     const [show, setShow] = useState(0)
+    const timerId = useRef()
 
     const handlePrev = () => {
         setShow(show - 1)
@@ -33,6 +38,14 @@ function Testimonials() {
             setShow(0)
         }
     }, [show])
+
+    useEffect(() => {
+        timerId.current = setInterval(() => {
+            setShow(prev => prev + 1)
+        }, 5000)
+
+        return () => clearInterval(timerId.current)
+    }, [])
 
     const handleNext = () => {
         setShow(show + 1)
@@ -91,7 +104,7 @@ function Testimonials() {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        marginRight: -22
+                        marginRight: -22,
                     }}
                 >
 
@@ -106,13 +119,14 @@ function Testimonials() {
                                     borderRadius: '50%',
                                     marginRight: 30
                                 }}
+                                onClick={() => setShow(index)}
                             ></span>
                         </>
 
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

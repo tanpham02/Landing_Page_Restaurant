@@ -42,6 +42,14 @@
         flex-direction: column;
         padding-top: 50px;
         margin: 0 22px;
+        transition: opacity linear 1.5s;
+        
+        & img {
+            animation: fadeIn linear 1.5s;
+            // transition: all linear 1.5s;
+            // transition-duration: 1.5s;
+            // transition-delay: 1.5s;
+        }
 
         &::before {
             content: '';
@@ -68,8 +76,6 @@
             border-radius: 10px;
             z-index: -2;
         }
-
-
     }
 
     &__name {
@@ -88,5 +94,14 @@
     &__desc {
         width: 703px;
         height: 96px;
+    }
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0.5;
+    } 100% {
+        opacity: 1;
     }
 }
