@@ -33,6 +33,12 @@
         align-items: center;
         position: relative;
         margin-right: 30px;
+        cursor: pointer;
+        transition: all ease-out 0.15s;
+
+        &:hover {
+            transform: translateY(-7px);
+        }
 
         & img {
             width: 90px;
@@ -79,13 +85,51 @@
                 color: var(--primary-color);
             }
 
+            &.like {
+                & i.info-body__icon-star {
+                    &.fa-regular {
+                        position: absolute;
+                        top: 30px;
+                        left: 30px;
+                        font-size: 18px;
+                        display: none;
+                    }
 
-            &__icon-star {
+                    &.fa-solid {
+                        position: absolute;
+                        top: 30px;
+                        left: 30px;
+                        font-size: 18px;
+                        display: block;
+
+                        &.active {
+                            color: #fff220;
+                        }
+                    }
+                }
+            }
+
+            & i.info-body__icon-star {
                 position: absolute;
                 top: 30px;
                 left: 30px;
                 font-size: 18px;
+                display: block;
+
+
+                &.fa-solid {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    font-size: 18px;
+                    display: none;
+
+                    &.active {
+                        color: #fff220;
+                    }
+                }
             }
+
 
             &__icon-dot {
                 position: absolute;

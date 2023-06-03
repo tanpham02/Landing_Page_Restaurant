@@ -1,6 +1,17 @@
 import './team.scss'
 
+
 function Team() {
+
+    const handleLike = (e) => {
+        e.target.parentElement.classList.add('like')
+
+    }
+
+    const handleUnLike = (e) => {
+        e.target.parentElement.classList.remove('like')
+    }
+
     return (
         <div className="team">
             <div className="grid">
@@ -28,7 +39,8 @@ function Team() {
                             <span className="info-body__address">Michigan, TX</span>
                             <h3 className="info-body__phone">989-653-2986</h3>
                             <span className="info-body__email">alisonkiara@hommy.com</span>
-                            <i className="info-body__icon-star fa-regular fa-star"></i>
+                            <i className="info-body__icon-star fa-regular fa-star" onClick={handleLike}></i>
+                            <i className="info-body__icon-star active fa-solid fa-star" onClick={handleUnLike}></i>
                             <i className="info-body__icon-dot fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
@@ -43,7 +55,8 @@ function Team() {
                             <span className="info-body__address">New Jeresy, TX</span>
                             <h3 className="info-body__phone">989-653-2550</h3>
                             <span className="info-body__email">hidianne@hommy.com</span>
-                            <i className="info-body__icon-star fa-regular fa-star"></i>
+                            <i className="info-body__icon-star fa-regular fa-star" onClick={handleLike}></i>
+                            <i className="info-body__icon-star active fa-solid fa-star" onClick={handleUnLike}></i>
                             <i className="info-body__icon-dot fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
@@ -58,7 +71,8 @@ function Team() {
                             <span className="info-body__address">Illinois, NZ</span>
                             <h3 className="info-body__phone">989-653-2986</h3>
                             <span className="info-body__email">iamrami@hommy.com</span>
-                            <i className="info-body__icon-star fa-regular fa-star"></i>
+                            <i className="info-body__icon-star fa-regular fa-star" onClick={handleLike}></i>
+                            <i className="info-body__icon-star active fa-solid fa-star" onClick={handleUnLike}></i>
                             <i className="info-body__icon-dot fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>

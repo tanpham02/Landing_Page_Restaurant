@@ -85,6 +85,7 @@ $desktop-width: 1024px;
         width: 1200px;
         align-items: center;
         height: 44px;
+        
 
         & .nav__lists {
             margin-left: 190px;
@@ -98,6 +99,7 @@ $desktop-width: 1024px;
                 color: var(--text-color);
                 display: flex;
                 align-items: center;
+                cursor: pointer;
 
                 & svg {
                     margin-left: 7px;
@@ -141,6 +143,12 @@ $desktop-width: 1024px;
                 width: 76px;
                 height: 44px;
                 cursor: pointer;
+
+                & option {
+                    border: none;
+                    outline: none;
+                    margin: 0;
+                }
             }
 
             & svg {
