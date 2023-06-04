@@ -1,6 +1,7 @@
 .team {
     background: linear-gradient(173.96deg, #F6FBFD 15.4%, rgba(244, 248, 253, 0) 91.24%);
     padding: 100px 0 350px;
+    position: relative;
 
     &__title {
         font-weight: 600;
@@ -35,6 +36,7 @@
         margin-right: 30px;
         cursor: pointer;
         transition: all ease-out 0.15s;
+        z-index: 2;
 
         &:hover {
             transform: translateY(-7px);
@@ -54,6 +56,7 @@
             justify-content: center;
             align-items: center;
             font-weight: 500;
+            // position: relative;
 
             &__name {
                 font-size: 2.6rem;
@@ -138,6 +141,28 @@
                 font-size: 18px;
             }
 
+
+        }
+
+
+    }
+
+
+    & .dot {
+        position: absolute;
+        top: 18.5%;
+        right: 77px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto; // căn chỉnh bao nhiêu cột
+        // grid-template-rows: auto auto auto auto auto auto; // căn chỉnh bao nhiêu dòng
+        column-gap: 31.2px; // khoảng caschs giữa các cột
+        row-gap: 34.43px; // khoảng cách giữa các dòng
+
+        &-child {
+            background-color: #ccddf7;
+            border-radius: 50%;
+            width: 16.14px;
+            height: 16.14px;
         }
     }
 

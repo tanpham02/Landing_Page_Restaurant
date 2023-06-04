@@ -80,6 +80,46 @@ function Team() {
 
 
             </div>
+
+            <div className="dot">
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className='dot-child'></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+                <span className="dot-child"></span>
+
+            </div>
         </div >
 
     )
