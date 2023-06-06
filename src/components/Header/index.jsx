@@ -86,8 +86,8 @@ function Header() {
                                                 position: 'absolute',
                                                 width: '14px',
                                                 height: '14px',
-                                                left: '46.5%',
-                                                top: '-30%',
+                                                left: '47.2%',
+                                                top: '-34%',
                                                 border: '1px solid #5A6273',
                                                 transform: 'rotate(43.58deg)',
                                             }}
@@ -99,8 +99,8 @@ function Header() {
                                                 position: 'absolute',
                                                 width: '31.28px',
                                                 height: '31.28px',
-                                                left: '46.8%',
-                                                top: '-17%',
+                                                left: '47.6%',
+                                                top: '-18%',
                                                 background: '#E9F4FE',
                                                 transform: 'rotate(43.58deg)',
                                                 zIndex: -1
