@@ -155,7 +155,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto; // căn chỉnh bao nhiêu cột
         // grid-template-rows: auto auto auto auto auto auto; // căn chỉnh bao nhiêu dòng
-        column-gap: 31.2px; // khoảng caschs giữa các cột
+        column-gap: 31.2px; // khoảng cách giữa các cột
         row-gap: 34.43px; // khoảng cách giữa các dòng
 
         &-child {
